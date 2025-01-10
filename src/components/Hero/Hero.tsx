@@ -17,7 +17,7 @@ export function Hero() {
             <p className="text-xl text-gray-200 mb-6">Software Engineer</p>
           </div>
           <div className="flex flex-col gap-4 text-sm mb-8 w-full">
-            <StatusBadge Icon={MapPin} text="Angola" />
+            <StatusBadge Icon={MapPin} text="Talatona, AO" />
             <StatusBadge Icon={Clock} text="4 hrs overlap (PST/EST)" />
             <StatusBadge Icon={Calendar} text="Available in 1 week" />
           </div>
