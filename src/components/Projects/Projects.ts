@@ -22,7 +22,7 @@ export const projects = [
        url: 'https://resumefeedback.mtcambrosio.com/',
        image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/rfeedback.webp',
        description: 'Platform for sharing and receiving resume feedback.',
-       technologies: ['TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'AWS S3', 'React'],
+       technologies: ['MongoDB','Express.js', 'React', 'Node.js'],
        highlights: [
          'Full-stack TypeScript implementation',
          'AWS S3 for document storage',

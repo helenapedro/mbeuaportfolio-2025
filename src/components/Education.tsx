@@ -1,4 +1,3 @@
-import React from 'react';
 import { GraduationCap, Award } from 'lucide-react';
 
 export function Education() {
@@ -14,9 +13,9 @@ export function Education() {
           </div>
           
           <div>
-            <h4 className="font-medium">University of Belas</h4>
-            <p className="text-gray-600">Petroleum Engineering</p>
-            <p className="text-gray-500 text-sm">March 2014 - October 2021</p>
+            <h4 className="font-medium">University of Belas, AO</h4>
+            <p className="text-gray-600">Petroleum Engineering, GPA: 15/20</p>
+            <p className="text-gray-500 text-sm">October 2021</p>
           </div>
         </div>
 
