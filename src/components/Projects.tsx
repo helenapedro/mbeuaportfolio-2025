@@ -20,7 +20,7 @@ export function Projects() {
           >
             <div className="p-6">
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-semibold text-align-center">{project.title}</h3>
+                <h3 className="text-xl font-semibold">{project.title}</h3>
                 <a 
                   href={project.url}
                   target="_blank"
@@ -50,23 +50,9 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              
-              <p className="text-gray-700 mb-4">{project.description}</p>
-
-              <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm">
-                {project.highlights.map((highlight, i) => (
-                  <li 
-                    key={i}
-                    className={`transition-opacity duration-300 ${
-                      hoveredIndex === index ? 'opacity-100' : 'opacity-70'
-                    }`}
-                  >
-                    {highlight}
-                  </li>
-                ))}
-              </ul>
+              <br/>
+              <p className="text-gray-700 text-justify mb-4">{project.description}</p>
             </div>
           </div>
         ))}

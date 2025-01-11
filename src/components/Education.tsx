@@ -1,4 +1,4 @@
-import { GraduationCap, Award } from 'lucide-react';
+import * as icon from 'lucide-react';
 
 export function Education() {
   return (
@@ -6,22 +6,39 @@ export function Education() {
       <h2 className="text-3xl font-bold mb-8">Certifications</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-white p-6 rounded-lg shadow-sm">
+      <div className="bg-white p-6 rounded-lg shadow-sm">
           <div className="flex items-center gap-3 mb-4">
-            <GraduationCap className="text-blue-600" size={24} />
-            <h3 className="text-xl font-semibold">Education</h3>
+            <a 
+              href='https://www.credly.com/badges/4fcb6c78-93fa-491f-b454-41b4f51cdef5'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 transform transition-transform hover:scale-110"
+            >
+              <icon.ExternalLink size={24} />
+            </a>
+            <h4 className="font-medium font-semibold">IBM Data Science Professional Certificate</h4>
+          </div>
+          
+          <div>
+            <p className="text-gray-500 text-sm">Feb, 2022</p>
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm">
           <div className="flex items-center gap-3 mb-4">
-            <Award className="text-blue-600" size={24} />
-            <h3 className="text-xl font-semibold">Certifications</h3>
+            <a 
+              href='https://www.credly.com/badges/4fcb6c78-93fa-491f-b454-41b4f51cdef5'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 transform transition-transform hover:scale-110"
+            >
+              <icon.ExternalLink size={24} />
+            </a>
+            <h4 className="font-medium font-semibold">IBM Data Science Professional Certificate</h4>
           </div>
           
           <div>
-            <h4 className="font-medium">IBM Data Science Professional Certificate</h4>
-            <p className="text-gray-500 text-sm">2022</p>
+            <p className="text-gray-500 text-sm">Feb, 2022</p>
           </div>
         </div>
       </div>

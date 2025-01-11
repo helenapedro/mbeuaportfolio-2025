@@ -1,5 +1,4 @@
 import { Hero } from './components/Hero/Hero';
-import { Education } from './components/Education';
 import { Projects } from './components/Projects';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <div className="w-full lg:pl-6">
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Projects />
-          <Education />
         </main>
       </div>
     </div>
