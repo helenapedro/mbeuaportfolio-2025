@@ -45,7 +45,7 @@ export const projects = [
         title: 'Vuata',
         url: 'https://vuata.netlify.app/',
         image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/Vuata.webp',
-        description: 'Predictive analytics for SpaceX rocket stage reusability.',
+        description: '',
         technologies: ['Vite', 'JavaScript', 'React', 'TypeScript', 'PostgreSQL'],
         /* highlights: [
           'Built classification models for recovery prediction',
