@@ -41,6 +41,19 @@ export const projects = [
           ] */
      },
 
+      {
+        title: 'Vuata',
+        url: 'https://vuata.netlify.app/',
+        image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/Vuata.webp',
+        description: 'Predictive analytics for SpaceX rocket stage reusability.',
+        technologies: ['Vite', 'JavaScript', 'React', 'TypeScript', 'PostgreSQL'],
+        /* highlights: [
+          'Built classification models for recovery prediction',
+          'Implemented real-time data collection via APIs',
+          'Created interactive visualizations with Plotly'
+        ] */
+      },
+
      {
        title: 'Rocket Launch Analytics',
        url: 'https://predictive-analytics-for-rocket-launches.mtcambrosio.com/',
@@ -54,10 +67,11 @@ export const projects = [
        ] */
      },
 
+
      {
           title: 'Project Management Web App',
-          url: 'https://predictive-analytics-for-rocket-launches.mtcambrosio.com/',
-          image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/rocket_launch_img.jpg',
+          url: 'https://master.d2p23rnvlomq8x.amplifyapp.com/',
+          image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/thisisengineering.jpg',
           description: 'Portfolio web app that showcases a construction engineer\'s skills, and professionally completed projects.',
           technologies: ['React', 'Bootstrap', 'Firebase'],
           /* highlights: [
