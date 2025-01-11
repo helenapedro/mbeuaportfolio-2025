@@ -11,10 +11,7 @@ export const projects = [
           Minkanda is a secure note-taking web app built with Spring Boot and React, 
           featuring encrypted storage for note titles and bodies using jasypt. Nginx 
           with IP-based rate limiting safeguards the backend API, while EhCache and HikariCP 
-          enhance performance. The backend is hosted on AWS EC2 for scalability, with 
-          Logback enabling real-time, asynchronous logging for monitoring and debugging. 
-          Minkanda reflects my expertise in crafting secure, high-performance applications. 
-          Test it with demo credentials (email: test@test.com, password: Test4321).
+          enhance performance. 
         `,
      },
 
