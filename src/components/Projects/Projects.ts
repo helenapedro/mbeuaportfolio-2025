@@ -1,8 +1,11 @@
+const BASE_URL = "https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com";
+const GITHUB_LINK = "https://github.com/helenapedro";
+
 export const projects = [
      {
        title: 'Minkanda: Note Taking',
        url: 'https://minkanda.mtcambrosio.com/',
-       image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/minkanda.jpg',
+       image: `${BASE_URL}/minkanda.jpg`,
        technologies: [
           'Spring(Boot, Security, JPA)', 'Nginx', 'Logback', 'Hibernate', 
           'jasypt', 'EhCache', 'HikariCP ', 'React'
@@ -11,53 +14,46 @@ export const projects = [
           Minkanda is a secure note-taking web app built with Spring Boot and React, 
           featuring encrypted storage for note titles and bodies using jasypt. Nginx 
           with IP-based rate limiting safeguards the backend API, while EhCache and HikariCP 
-          enhance performance. 
+          to enhance performance. 
         `,
+        frontendUrl: `${GITHUB_LINK}/minkanda-frontend.git`,
+        backendUrl: `${GITHUB_LINK}/notesbackend.git`
      },
 
      {
        title: 'Resume Feedback',
        url: 'https://resumefeedback.mtcambrosio.com/',
-       image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/rfeedback.webp',
-       description: 'Platform for sharing and receiving resume feedback.',
+       image: `${BASE_URL}/rfeedback.webp`,
+       description: 'This is a full-stack TypeScript implementation platform for sharing and receiving resume feedback. I used AWS S3 for document storage and AWS CloudFront for CDN integration to improve performance.',
        technologies: ['MongoDB','Express.js', 'React', 'Node.js'],
-       /* highlights: [
-         'Full-stack TypeScript implementation',
-         'AWS S3 for document storage',
-         'CloudFront CDN integration'
-       ] */
+       frontendUrl: `${GITHUB_LINK}/feedback-frontend.git`,
+       backendUrl: `${GITHUB_LINK}/feedback-backend.git`,
      },
 
      {
           title: 'GasPump',
           url: 'https://gaspump.mtcambrosio.com/',
-          image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/gaspump.jpeg',
-          description: 'Dynamic data visualization tool for users to explore gas station insights effortlessly.',
+          image: `${BASE_URL}/gaspump.jpeg`,
+          description: 'Interactive web app that empowers users to explore and analyze gas station insights effortlessly. The tool leverages web scraping techniques, implemented in Python, to extract real-time data from gas pump operator websites and other relevant sources. This data is then processed and stored in a hybrid database system using SQL for structured data and MongoDB for unstructured data.',
           technologies: ['Python', 'Flask', 'WebScraping', 'SQL', 'MongoDB', 'Dash'],
-          /* highlights: [
-            'Implemented using Python/Flask, SQL and MongoDB',
-            'Designed with Dash and Plotly, enhanced by HTML/CSS',
-            'Hosted on Heroku'
-          ] */
+          frontendUrl: '',
+          backendUrl: '',
      },
 
       {
         title: 'Vuata',
         url: 'https://vuata.netlify.app/',
-        image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/Vuata.webp',
-        description: '',
-        technologies: ['Vite', 'JavaScript', 'React', 'TypeScript', 'PostgreSQL'],
-        /* highlights: [
-          'Built classification models for recovery prediction',
-          'Implemented real-time data collection via APIs',
-          'Created interactive visualizations with Plotly'
-        ] */
+        image: `${BASE_URL}/Vuata.webp`,
+        description: 'Vuata is a modern e-commerce web application designed for buying and selling clothes across various conditions. Built with cutting-edge technologies, Vuata offers a seamless, responsive user experience for both buyers and sellers.',
+        technologies: ['JavaScript','TypeScript', 'Vite', 'React', 'PostgreSQL'],
+        frontendUrl: '',
+        backendUrl: '',
       },
 
      {
        title: 'Rocket Launch Analytics',
        url: 'https://predictive-analytics-for-rocket-launches.mtcambrosio.com/',
-       image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/rocket_launch_img.jpg',
+       image: `${BASE_URL}/rocket_launch_img.jpg`,
        description: 'Predictive analytics for SpaceX rocket stage reusability.',
        technologies: ['Python', 'Flask', 'SQL', 'Plotly', 'Machine Learning'],
        /* highlights: [
@@ -65,13 +61,15 @@ export const projects = [
          'Implemented real-time data collection via APIs',
          'Created interactive visualizations with Plotly'
        ] */
+        frontendCodeLink: '',
+        backendUrl: '',
      },
 
 
      {
           title: 'Project Management Web App',
           url: 'https://master.d2p23rnvlomq8x.amplifyapp.com/',
-          image: 'https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/thisisengineering.jpg',
+          image: `${BASE_URL}/thisisengineering.jpg`,
           description: 'Portfolio web app that showcases a construction engineer\'s skills, and professionally completed projects.',
           technologies: ['React', 'Bootstrap', 'Firebase'],
           /* highlights: [
@@ -80,5 +78,7 @@ export const projects = [
             'Used CloudFront for CDN to improve performance',
             'Deployed on AWS Amplify'
           ] */
+          frontendUrl: '',
+          backendUrl: '',
      }
 ];

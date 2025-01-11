@@ -1,5 +1,4 @@
-import { SiGithub, SiLinkedin } from 'react-icons/si';
-import { HiOutlineMail } from 'react-icons/hi';
+import * as icon from 'react-icons/si';
 import { IconType } from 'react-icons';
 
 interface SocialLink {
@@ -9,9 +8,10 @@ interface SocialLink {
 }
 
 const socialLinks: SocialLink[] = [
-  { icon: SiGithub, href: 'https://github.com/helenapedro', label: 'GitHub' },
-  { icon: SiLinkedin, href: 'https://www.linkedin.com/in/helena-mbeua-pedro/', label: 'LinkedIn' },
-  { icon: HiOutlineMail, href: 'mailto:mbeua94@gmail.com', label: 'Email' },
+  { icon: icon.SiGithub, href: 'https://github.com/helenapedro', label: 'GitHub' },
+  { icon: icon.SiLinkedin, href: 'https://www.linkedin.com/in/helena-mbeua-pedro/', label: 'LinkedIn' },
+  { icon: icon.SiWhatsapp, href: 'https://wa.me/+244936457069', label: 'Whatsapp' },
+  { icon: icon.SiFiles, href: 'https://hmpedropublicfiles.s3.us-east-2.amazonaws.com/Resume_HMPedro.pdf', label: 'Resume' },
 ];
 
 export function SocialLinks() {
