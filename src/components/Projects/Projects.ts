@@ -41,10 +41,20 @@ export const projects = [
      },
 
       {
-        title: 'Vuata',
+        title: 'Vuata: A Modern E-Commerce Solution',
         url: 'https://vuata.netlify.app/',
         image: `${BASE_URL}/Vuata.webp`,
-        description: 'Vuata is a modern e-commerce web application designed for buying and selling clothes across various conditions. Built with cutting-edge technologies, Vuata offers a seamless, responsive user experience for both buyers and sellers.',
+        description: `
+          Vuata is a cutting-edge e-commerce web app for buying and selling clothes across various conditions.
+
+         
+          The journey to Vuata began with a unique vision: I wanted a web app that felt as familiar and 
+          intuitive as daily apps. My goal was to merge the functionality of a robust e-commerce platform with 
+          the sleek, engaging experience of a modern mobile app.
+
+          To bring this vision to life, I designed Vuata with a mobile-first approach, prioritizing smooth navigation, 
+          visually appealing interfaces, and interactive features.
+        `,
         technologies: ['JavaScript','TypeScript', 'Vite', 'React', 'PostgreSQL'],
         frontendUrl: '',
         backendUrl: '',

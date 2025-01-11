@@ -84,7 +84,14 @@ const ProjectCard: React.FC<ProjectProps> = ({ project, isHovered, onMouseEnter,
           />
         </div>
 
-        <p className="text-gray-700 text-justify mb-4">{project.description}</p>
+        <p className="text-gray-700 text-justify mb-4">
+          {project.description.split('\n\n').map((paragraph, index) => (
+            <span key={index} className="block mb-2">
+              {paragraph}
+            </span>
+          ))}
+        </p>
+
 
         <div className="flex gap-4 mt-4">
           {project.url && (
