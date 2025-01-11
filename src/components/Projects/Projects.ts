@@ -42,7 +42,7 @@ export const projects = [
 
       {
         title: 'Vuata: A Modern E-Commerce Solution',
-        url: 'https://vuata.netlify.app/',
+        url: 'https://vuata.mtcambrosio.com/',
         image: `${BASE_URL}/Vuata.webp`,
         description: `
           Vuata is a cutting-edge e-commerce web app for buying and selling clothes across various conditions.
