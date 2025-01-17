@@ -1,15 +1,18 @@
 import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { projects } from './Projects/Projects';
-import { ChevronLeft, ChevronRight } from 'react-feather';
+import { ChevronLeft, ChevronRight, X } from 'react-feather';
 
 export function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [modalImage, setModalImage] = useState<string | null>(null);
+
+  const closeModal = () => setModalImage(null);
 
   return (
     <section className="mb-16">
       <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <ProjectCard
@@ -18,9 +21,33 @@ export function Projects() {
             isHovered={hoveredIndex === index}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
+            onImageClick={setModalImage}
           />
         ))}
       </div>
+
+      {/* Modal for image */}
+      {modalImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={closeModal}
+        >
+          <div className="relative">
+            <button
+              className="absolute top-2 right-2 text-white bg-gray-800 p-2 rounded-full"
+              onClick={closeModal}
+            >
+              <X size={24} />
+            </button>
+            <img
+              src={modalImage}
+              alt="Modal"
+              className="max-w-full max-h-screen"
+              onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking on the image
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
@@ -39,9 +66,16 @@ interface ProjectProps {
   isHovered: boolean;
   onMouseEnter: () => void;
   onMouseLeave: () => void;
+  onImageClick: (image: string) => void;
 }
 
-const ProjectCard: React.FC<ProjectProps> = ({ project, isHovered, onMouseEnter, onMouseLeave }) => {
+const ProjectCard: React.FC<ProjectProps> = ({
+  project,
+  isHovered,
+  onMouseEnter,
+  onMouseLeave,
+  onImageClick,
+}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = project.images || [];
@@ -87,9 +121,10 @@ const ProjectCard: React.FC<ProjectProps> = ({ project, isHovered, onMouseEnter,
               <img
                 src={images[currentImageIndex]}
                 alt={`${project.title} - Image ${currentImageIndex + 1}`}
-                className={`w-full h-60 object-cover transition-transform duration-700 ${
+                className={`w-full h-60 object-cover transition-transform duration-700 cursor-pointer ${
                   isHovered ? 'scale-110' : ''
                 }`}
+                onClick={() => onImageClick(images[currentImageIndex])}
               />
               {/* Navigation Arrows */}
               <button
@@ -110,9 +145,10 @@ const ProjectCard: React.FC<ProjectProps> = ({ project, isHovered, onMouseEnter,
               <img
                 src={project.image}
                 alt={project.title}
-                className={`w-full h-48 object-cover transition-transform duration-700 ${
+                className={`w-full h-48 object-cover transition-transform duration-700 cursor-pointer ${
                   isHovered ? 'scale-110' : ''
                 }`}
+                onClick={() => onImageClick(project.image!)}
               />
             )
           )}
