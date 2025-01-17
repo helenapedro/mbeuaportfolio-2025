@@ -47,7 +47,7 @@ export const projects = [
         description: `
           Vuata is a cutting-edge e-commerce web app for buying and selling clothes across various conditions.
         `,
-        technologies: ['JavaScript','TypeScript', 'Vite', 'React', 'PostgreSQL'],
+        technologies: ['PostgreSQL','JavaScript','TypeScript', 'Vite', 'React', 'TailwindCSS'],
         frontendUrl: '',
         backendUrl: '',
       },
