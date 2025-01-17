@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { projects } from './Projects/Projects';
+import { ChevronLeft, ChevronRight } from 'react-feather';
 
 export function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -31,7 +32,8 @@ interface ProjectProps {
     frontendUrl?: string;
     backendUrl?: string;
     technologies: string[];
-    image: string;
+    image?: string;
+    images?: string[];
     description: string;
   };
   isHovered: boolean;
@@ -40,6 +42,24 @@ interface ProjectProps {
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({ project, isHovered, onMouseEnter, onMouseLeave }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const images = project.images || [];
+
+  const handleNextImage = () => {
+    if (images.length > 0) {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }
+  };
+
+  const handlePrevImage = () => {
+    if (images.length > 0) {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      );
+    }
+  };
+
   return (
     <div
       className={`group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transform transition-all duration-300 ${
@@ -61,27 +81,41 @@ const ProjectCard: React.FC<ProjectProps> = ({ project, isHovered, onMouseEnter,
           </a>
         </div>
 
-        <div className="mb-4">
-          <div className="flex flex-wrap gap-2">
-            {project.technologies.map((tech, i) => (
-              <span
-                key={i}
-                className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm transform transition-transform hover:scale-105"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </div>
-
         <div className="relative overflow-hidden mb-4">
-          <img
-            src={project.image}
-            alt={project.title}
-            className={`w-full h-48 object-cover transition-transform duration-700 ${
-              isHovered ? 'scale-110' : ''
-            }`}
-          />
+          {images.length > 0 ? (
+            <div className="relative">
+              <img
+                src={images[currentImageIndex]}
+                alt={`${project.title} - Image ${currentImageIndex + 1}`}
+                className={`w-full h-60 object-cover transition-transform duration-700 ${
+                  isHovered ? 'scale-110' : ''
+                }`}
+              />
+              {/* Navigation Arrows */}
+              <button
+                onClick={handlePrevImage}
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                onClick={handleNextImage}
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
+          ) : (
+            project.image && (
+              <img
+                src={project.image}
+                alt={project.title}
+                className={`w-full h-48 object-cover transition-transform duration-700 ${
+                  isHovered ? 'scale-110' : ''
+                }`}
+              />
+            )
+          )}
         </div>
 
         <p className="text-gray-700 text-justify mb-4">
@@ -91,7 +125,6 @@ const ProjectCard: React.FC<ProjectProps> = ({ project, isHovered, onMouseEnter,
             </span>
           ))}
         </p>
-
 
         <div className="flex gap-4 mt-4">
           {project.url && (
@@ -121,7 +154,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project, isHovered, onMouseEnter,
               rel="noopener noreferrer"
               className="mb-3 px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors whitespace-nowrap text-xs truncate"
             >
-              View Backend Code
+              Backend Code
             </a>
           )}
         </div>
