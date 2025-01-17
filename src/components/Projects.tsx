@@ -43,7 +43,7 @@ export function Projects() {
               src={modalImage}
               alt="Modal"
               className="max-w-full max-h-screen"
-              onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking on the image
+              onClick={(e) => e.stopPropagation()} 
             />
           </div>
         </div>
