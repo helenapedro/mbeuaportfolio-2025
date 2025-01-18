@@ -11,13 +11,15 @@ export const projects = [
       'jasypt', 'EhCache', 'HikariCP ', 'React'
     ],
     description: `
-      Minkanda is a secure, privacy-focused note-taking web application that prioritizes 
-      data confidentiality. It ensures end-to-end encryption for note titles and bodies 
-      using jasypt, making all notes inaccessible even to the developer. By default, notes 
-      are private, with an optional feature to make them public.
+      Minkanda is a secure, privacy-focused note-taking web application that prioritizes data confidentiality. 
 
-      Nginx implements IP-based rate limiting to safeguard the backend API, 
-      while EhCache and HikariCP optimize performance and scalability.
+      It ensures 𝗲𝗻𝗱-𝘁𝗼-𝗲𝗻𝗱 𝗲𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻 for note titles and bodies using 𝗷𝗮𝘀𝘆𝗽𝘁, making all notes inaccessible-even 
+      to the developer. By default, notes are private, with an optional feature to make them public.
+
+      I’ve implemented 𝗿𝗮𝘁𝗲 𝗹𝗶𝗺𝗶𝘁𝗶𝗻𝗴 using 𝗡𝗴𝗶𝗻𝘅 to safeguard the backend API from excessive requests. 
+      This API allows users to create, update, and delete notes, so protecting these endpoints is crucial. 
+
+      I’ve also enabled 𝗜𝗻-𝗠𝗲𝗺𝗼𝗿𝘆-𝗖𝗮𝗰𝗵𝗶𝗻𝗴 using EhCache to store frequently accessed user notes. 
 
     `,
     frontendUrl: `${GITHUB_LINK}/minkanda-frontend.git`,
