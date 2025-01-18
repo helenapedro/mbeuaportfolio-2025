@@ -115,6 +115,20 @@ const ProjectCard: React.FC<ProjectProps> = ({
           </a>
         </div>
 
+        {/* technologies */}
+        <div className="mb-4">
+          <div className="flex flex-wrap gap-2">
+            {project.technologies.map((tech, i) => (
+              <span
+                key={i}
+                className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm transform transition-transform hover:scale-105"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
         <div className="relative overflow-hidden mb-4">
           {images.length > 0 ? (
             <div className="relative">

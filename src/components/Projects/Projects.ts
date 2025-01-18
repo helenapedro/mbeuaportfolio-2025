@@ -7,14 +7,18 @@ export const projects = [
     url: 'https://minkanda.mtcambrosio.com/',
     image: `${BASE_URL}/minkanda.jpg`,
     technologies: [
-      'Spring(Boot, Security, JPA)', 'Nginx', 'Logback', 'Hibernate', 
+      'Spring ( Boot, Security, JPA )', 'Nginx', 'Logback', 'Hibernate', 
       'jasypt', 'EhCache', 'HikariCP ', 'React'
     ],
     description: `
-      Minkanda is a secure note-taking web app built with Spring Boot and React, 
-      featuring encrypted storage for note titles and bodies using jasypt. Nginx 
-      with IP-based rate limiting safeguards the backend API, while EhCache and HikariCP 
-      to enhance performance. 
+      Minkanda is a secure, privacy-focused note-taking web application that prioritizes 
+      data confidentiality. It ensures end-to-end encryption for note titles and bodies 
+      using jasypt, making all notes inaccessible even to the developer. By default, notes 
+      are private, with an optional feature to make them public.
+
+      Nginx implements IP-based rate limiting to safeguard the backend API, 
+      while EhCache and HikariCP optimize performance and scalability.
+
     `,
     frontendUrl: `${GITHUB_LINK}/minkanda-frontend.git`,
     backendUrl: `${GITHUB_LINK}/notesbackend.git`
