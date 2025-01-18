@@ -33,7 +33,13 @@ export const projects = [
       `${BASE_URL}/rfeedback.webp`,
       `${BASE_URL}/feedback_io.webp`
     ],
-    description: 'This is a full-stack TypeScript implementation platform for sharing and receiving resume feedback. I used AWS S3 for document storage and AWS CloudFront for CDN integration to improve performance.',
+    description: `
+      This is a full-stack TypeScript implementation platform for sharing and receiving resume feedback. 
+      
+
+
+      I used AWS 𝗦𝟯 for document storage and AWS CloudFront for 𝗖𝗗𝗡 integration to improve performance.
+    `,
     technologies: ['MongoDB', 'Express.js', 'React', 'Node.js'],
     frontendUrl: `${GITHUB_LINK}/feedback-frontend.git`,
     backendUrl: `${GITHUB_LINK}/feedback-backend.git`,
@@ -43,7 +49,15 @@ export const projects = [
     title: 'GasPump',
     url: 'https://gaspump.mtcambrosio.com/',
     image: `${BASE_URL}/gaspump.jpeg`,
-    description: 'Interactive web app that empowers users to explore and analyze gas station insights effortlessly. The tool leverages web scraping techniques, implemented in Python, to extract real-time data from gas pump operator websites and other relevant sources. This data is then processed and stored in a hybrid database system using SQL for structured data and MongoDB for unstructured data.',
+    description: `
+      An Interactive web app designed to empowers users to effortlessly explore and analyze gas station insights. 
+      
+
+
+      The tool employs Python-based web scraping techniques to extract real-time data from gas pump operator websites 
+      and other relevant sources. This data is processed and stored in a hybrid database system, combining SQL for structured 
+      data and MongoDB for unstructured data.
+    `,
     technologies: ['Python', 'Flask', 'WebScraping', 'SQL', 'MongoDB', 'Dash'],
     frontendUrl: '',
     backendUrl: '',
