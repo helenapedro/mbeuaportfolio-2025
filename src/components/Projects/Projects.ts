@@ -87,10 +87,10 @@ export const projects = [
 
   {
     title: 'Project Management Web App',
+    technologies: ['React', 'Bootstrap', 'Firebase', 'S3', 'CloudFront', 'Amplify'],
     url: 'https://master.d2p23rnvlomq8x.amplifyapp.com/',
     image: `${BASE_URL}/thisisengineering.jpg`,
     description: 'Portfolio web app that showcases a construction engineer\'s skills, and professionally completed projects.',
-    technologies: ['React', 'Bootstrap', 'Firebase'],
     /* highlights: [
       'Used Firebase for backend and database',
       'Used AWS S3 for image storage',
