@@ -1,8 +1,12 @@
 import { LucideIcon } from 'lucide-react';
+import { IconType } from 'react-icons';
+
+type IconComponent = LucideIcon | IconType;
 
 interface StatusBadgeProps {
-  Icon: LucideIcon;
+  Icon: IconComponent;
   text: string;
+  href?: string;
 }
 
 export function StatusBadge({ Icon, text }: StatusBadgeProps) {
