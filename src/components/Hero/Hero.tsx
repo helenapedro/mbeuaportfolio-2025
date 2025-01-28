@@ -23,7 +23,7 @@ export function Hero() {
             <StatusBadge Icon={SiFiles} text="Resume" href="https://hmpedropublicfiles.s3.us-east-2.amazonaws.com/Resume_HMPedro.pdf" />
           </div>
           <p className="text-base leading-relaxed mb-8 text-gray-300">
-            I'm a software engineer with 4 years of experience in full-stack development, microservices, 
+            I'm a software engineer with over 3 years of experience in full-stack development, microservices, 
             database design, and cloud solutions. I am adept at building high-performance and scalable systems.
           </p>
           <SocialLinks />
