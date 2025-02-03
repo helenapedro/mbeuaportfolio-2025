@@ -86,7 +86,7 @@ export const projects = [
   },
 
   {
-    title: 'Project Management Web App',
+    title: 'Portfolio Web App',
     technologies: ['React', 'Bootstrap', 'Firebase', 'S3', 'CloudFront', 'Amplify'],
     url: 'https://master.d2p23rnvlomq8x.amplifyapp.com/',
     image: `${BASE_URL}/thisisengineering.jpg`,
