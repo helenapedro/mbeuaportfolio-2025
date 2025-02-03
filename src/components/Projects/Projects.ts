@@ -99,5 +99,22 @@ export const projects = [
     ] */
     frontendUrl: '',
     backendUrl: '',
-  }
+  },
+
+  {
+    title: 'Coding Fun Land',
+    url: 'https://codingfunland.mtcambrosio.com/',
+    images: [
+      `https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/codingfunland_1.webp`,
+      `https://mbeuaportfolio-media.s3.us-east-2.amazonaws.com/codingfunland_1.webp`
+    ],
+    description: `
+      Since December 2024, I’ve been guiding kids (ages 5–10) into the world of coding through fun, 
+      hands-on projects using Python and Dash. Through Coding Fun Land, I’ve mentored 15 young learners, 
+      helping them build simple yet engaging apps that spark creativity and problem-solving skills.
+    `,
+    technologies: ['Volunteer Work'],
+    frontendUrl: '',
+    backendUrl: '',
+  },
 ];
