@@ -40,7 +40,7 @@ export const projects = [
 
       I used AWS 𝗦𝟯 for document storage and AWS CloudFront for 𝗖𝗗𝗡 integration to improve performance.
     `,
-    technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Bootstrap'],
+    technologies: ['TypeScript', 'MongoDB', 'Express.js', 'React', 'Node.js', 'Bootstrap'],
     frontendUrl: `${GITHUB_LINK}/feedback-frontend.git`,
     backendUrl: `${GITHUB_LINK}/feedback-backend.git`,
   },
@@ -58,22 +58,22 @@ export const projects = [
       and other relevant sources. This data is processed and stored in a hybrid database system, combining SQL for structured 
       data and MongoDB for unstructured data.
     `,
-    technologies: ['Python', 'Flask', 'WebScraping', 'SQL', 'MongoDB', 'Dash', 'Plotly'],
+    technologies: ['Python', 'Flask', 'SQL', 'MongoDB', 'Dash', 'Plotly'],
     frontendUrl: '',
     backendUrl: '',
   },
 
-  // {
-  //   title: 'Vuata: A Modern E-Commerce Solution',
-  //   url: 'https://vuata.mtcambrosio.com/',
-  //   image: `${BASE_URL}/Vuata.webp`,
-  //   description: `
-  //     Vuata is a cutting-edge e-commerce web app for buying and selling clothes across various conditions.
-  //   `,
-  //   technologies: ['PostgreSQL','JavaScript','TypeScript', 'Vite', 'React', 'TailwindCSS'],
-  //   frontendUrl: '',
-  //   backendUrl: '',
-  // },
+  {
+    title: 'Vuata: A Modern E-Commerce Solution',
+    url: 'https://vuata.mtcambrosio.com/',
+    image: `${BASE_URL}/Vuata.webp`,
+    description: `
+      Vuata is a cutting-edge e-commerce web app for buying and selling clothes across various conditions.
+    `,
+    technologies: ['NodeJS','Express','Supabase','Firebase','TypeScript', 'Vite', 'React', 'Tailwind'],
+    frontendUrl: '',
+    backendUrl: '',
+  },
 
   {
     title: 'Rocket Launch Analytics',
