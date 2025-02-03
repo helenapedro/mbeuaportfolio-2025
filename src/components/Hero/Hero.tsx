@@ -24,7 +24,7 @@ export function Hero() {
           </div>
           <p className="text-base leading-relaxed mb-8 text-gray-300">
             I'm a software engineer with over 3 years of experience in full-stack development, microservices, 
-            database design, and cloud solutions. I am adept at building high-performance and scalable systems.
+            database design, cloud solutions and data science. I am adept at building high-performance and scalable systems.
           </p>
           <SocialLinks />
         </div>
