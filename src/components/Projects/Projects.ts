@@ -63,17 +63,17 @@ export const projects = [
     backendUrl: '',
   },
 
-  {
-    title: 'Vuata: A Modern E-Commerce Solution',
-    url: 'https://vuata.mtcambrosio.com/',
-    image: `${BASE_URL}/Vuata.webp`,
-    description: `
-      Vuata is a cutting-edge e-commerce web app for buying and selling clothes across various conditions.
-    `,
-    technologies: ['NodeJS','Express','Supabase','Firebase','TypeScript', 'Vite', 'React', 'Tailwind'],
-    frontendUrl: '',
-    backendUrl: '',
-  },
+  // {
+  //   title: 'Vuata: A Modern E-Commerce Solution',
+  //   url: 'https://vuata.mtcambrosio.com/',
+  //   image: `${BASE_URL}/Vuata.webp`,
+  //   description: `
+  //     Vuata is a cutting-edge e-commerce web app for buying and selling clothes across various conditions.
+  //   `,
+  //   technologies: ['NodeJS','Express','Supabase','Firebase','TypeScript', 'Vite', 'React', 'Tailwind'],
+  //   frontendUrl: '',
+  //   backendUrl: '',
+  // },
 
   {
     title: 'Rocket Launch Analytics',
