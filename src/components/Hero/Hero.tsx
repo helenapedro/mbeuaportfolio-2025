@@ -20,7 +20,7 @@ export function Hero() {
           <div className="flex flex-col gap-4 text-sm mb-8 w-full">
             <StatusBadge Icon={MapPin} text="Talatona, AO" />
             <StatusBadge Icon={Clock} text="4 hrs overlap (PST/EST)" />
-            <StatusBadge Icon={SiFiles} text="Resume" href="https://hmpedropublicfiles.s3.us-east-2.amazonaws.com/Resume_HMPedro.pdf" />
+            <StatusBadge Icon={SiFiles} text="Resume" href="https://hmpedropublicfiles.s3.us-east-2.amazonaws.com/Resume_HMPedro.pdf" target="_blank" />
           </div>
           <p className="text-base leading-relaxed mb-8 text-gray-300">
             I'm a software engineer with over 3 years of experience in full-stack development, microservices, 
