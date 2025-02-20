@@ -75,11 +75,24 @@ export const projects = [
   // },
 
   {
-    title: 'Rocket Launch Analytics',
+    title: 'Rocket Stage Reusability and Launch Analysis',
     url: 'https://predictive-analytics-for-rocket-launches.mtcambrosio.com/',
     image: `${BASE_URL}/rocket_launch_img.jpg`,
-    description: 'Predictive analytics for SpaceX rocket stage reusability.',
-    technologies: ['Python', 'Flask', 'SQL', 'Plotly', 'Machine Learning'],
+    description: `
+      This web application predicts rocket stage reusability and analyzes launch 
+      locations with interactive visualizations. 
+      
+      
+      
+
+
+      It dynamically queries SpaceX launch data using SQL, allowing users to explore 
+      performance metrics such as payload mass, mission success rates, and landing outcomes.
+      The application features interactive maps and charts to visualize launch sites and results. 
+      Additionally, it integrates historical launch data scraped from Wikipedia and performs Exploratory 
+      Data Analysis (EDA) by fetching data via GET requests from the SpaceX REST API.
+    `,
+    technologies: ['Python', 'Flask', 'Dash', 'SQL', 'EDA', 'Webscraping', 'REST API', 'Folium'],
     frontendCodeLink: '',
     backendUrl: '',
   },
@@ -114,7 +127,7 @@ export const projects = [
 
       Click the button below to see some of the fun and innovative projects our budding coders have built.
     `,
-    technologies: ['Volunteer Work'],
+    technologies: ['Volunteer Work', 'Python', 'Dash'],
     frontendUrl: '',
     backendUrl: '',
   },
