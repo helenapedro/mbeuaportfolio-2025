@@ -15,14 +15,14 @@ export function Hero() {
             <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
               Helena Pedro
             </h1>
-            <p className="text-xl text-gray-200 mb-6">Software Engineer</p>
+            <p className="text-xl text-gray-200 mb-4">Software Engineer</p>
           </div>
-          <div className="flex flex-col gap-4 text-sm mb-8 w-full">
+          <div className="flex flex-col gap-4 text-sm mb-2 w-full">
             <StatusBadge Icon={MapPin} text="Talatona, AO" />
             <StatusBadge Icon={Clock} text="4 hrs overlap (PST/EST)" />
             <StatusBadge Icon={SiFiles} text="Resume" href="https://hmpedropublicfiles.s3.us-east-2.amazonaws.com/Resume_HMPedro.pdf" target="_blank" />
           </div>
-          <p className="text-base leading-relaxed mb-4 text-gray-300 max-w-2xl mx-auto">
+          <p className="text-base leading-relaxed mb-2 text-gray-300 max-w-2xl mx-auto">
             I'm a passionate software engineer with a strong background in backend development, microservices, 
             database design, cloud solutions, and data science. I am adept at building high-performance and scalable systems. 
             <br/> This is a showcase of my projects and skills.

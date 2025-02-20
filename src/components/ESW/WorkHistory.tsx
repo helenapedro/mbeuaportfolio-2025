@@ -1,4 +1,3 @@
-import React from 'react';
 import { Building2, Calendar } from 'lucide-react';
 
 const workHistory = [
