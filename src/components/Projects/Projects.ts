@@ -7,8 +7,7 @@ export const projects = [
     url: 'https://minkanda.mtcambrosio.com/',
     image: `${BASE_URL}/minkanda.jpg`,
     technologies: [
-      'Spring ( Boot, Security, JPA )', 'Nginx', 'Logback', 'Hibernate', 
-      'jasypt', 'EhCache', 'HikariCP ', 'React'
+      'Spring', 'Nginx', 'Hibernate', 'React', 'AWS EC2'
     ],
     description: `
       Minkanda is a secure, privacy-focused note-taking web application that prioritizes data confidentiality. 

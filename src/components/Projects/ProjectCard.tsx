@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
-import { projects } from './Projects/Projects';
+import { projects } from './Projects';
 import { ChevronLeft, ChevronRight, X } from 'react-feather';
 
 export function Projects() {

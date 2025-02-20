@@ -1,5 +1,5 @@
 import { Hero } from './components/Hero/Hero';
-import { Projects } from './components/Projects';
+import { Projects } from './components/Projects/ProjectCard';
 
 function App() {
   return (

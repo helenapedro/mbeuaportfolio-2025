@@ -22,9 +22,10 @@ export function Hero() {
             <StatusBadge Icon={Clock} text="4 hrs overlap (PST/EST)" />
             <StatusBadge Icon={SiFiles} text="Resume" href="https://hmpedropublicfiles.s3.us-east-2.amazonaws.com/Resume_HMPedro.pdf" target="_blank" />
           </div>
-          <p className="text-base leading-relaxed mb-8 text-gray-300">
-            I'm a software engineer with over 3 years of experience in full-stack development, microservices, 
-            database design, cloud solutions and data science. I am adept at building high-performance and scalable systems.
+          <p className="text-base leading-relaxed mb-4 text-gray-300 max-w-2xl mx-auto">
+            I'm a passionate software engineer with a strong background in backend development, microservices, 
+            database design, cloud solutions, and data science. I am adept at building high-performance and scalable systems. 
+            <br/> This is a showcase of my projects and skills.
           </p>
           <SocialLinks />
         </div>
