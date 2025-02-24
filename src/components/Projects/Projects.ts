@@ -4,13 +4,13 @@ const GITHUB_LINK = "https://github.com/helenapedro";
 export const projects = [
   {
     title: 'Minkanda: Note Taking',
-    url: 'https://minkanda-notes-taking.mtcambrosio.com/',
+    url: 'https://minkanda.mtcambrosio.com/',
     image: `${BASE_URL}/minkanda.jpg`,
     technologies: [
       'Spring', 'Nginx', 'Hibernate', 'React/Redux', 'AWS EC2'
     ],
     description: `
-      Minkanda is a secure, privacy-focused note-taking web application that prioritizes data confidentiality. 
+      Minkanda is a Web app that securely creates, manages, and accesses private and public notes. 
 
       It ensures 𝗲𝗻𝗱-𝘁𝗼-𝗲𝗻𝗱 𝗲𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻 for note titles and bodies using 𝗷𝗮𝘀𝘆𝗽𝘁, making all notes inaccessible-even 
       to the developer. By default, notes are private, with an optional feature to make them public.
