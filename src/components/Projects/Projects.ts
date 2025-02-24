@@ -100,15 +100,9 @@ export const projects = [
   {
     title: 'Portfolio Web App',
     technologies: ['React', 'Bootstrap', 'Firebase', 'S3', 'CloudFront', 'Amplify'],
-    url: 'https://master.d2p23rnvlomq8x.amplifyapp.com/',
+    url: 'https://constructpro.mtcambrosio.com/',
     image: `${BASE_URL}/thisisengineering.jpg`,
     description: 'Portfolio web app that showcases a construction engineer\'s skills, and professionally completed projects.',
-    /* highlights: [
-      'Used Firebase for backend and database',
-      'Used AWS S3 for image storage',
-      'Used CloudFront for CDN to improve performance',
-      'Deployed on AWS Amplify'
-    ] */
     frontendUrl: '',
     backendUrl: '',
   },
