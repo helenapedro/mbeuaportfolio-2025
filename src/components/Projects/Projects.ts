@@ -4,10 +4,10 @@ const GITHUB_LINK = "https://github.com/helenapedro";
 export const projects = [
   {
     title: 'Minkanda: Note Taking',
-    url: 'https://minkanda.mtcambrosio.com/',
+    url: 'https://minkanda-notes-taking.mtcambrosio.com/',
     image: `${BASE_URL}/minkanda.jpg`,
     technologies: [
-      'Spring', 'Nginx', 'Hibernate', 'React/Redux', 'AWS EC2'
+      'Spring', 'Nginx', 'Hibernate', 'React/Redux', 'AWS EC2', 'Hostinger'
     ],
     description: `
       Minkanda is a Web app that securely creates, manages, and accesses private and public notes. 
