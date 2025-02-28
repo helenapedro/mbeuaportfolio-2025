@@ -4,7 +4,7 @@ const GITHUB_LINK = "https://github.com/helenapedro";
 export const projects = [
   {
     title: 'Minkanda: Note Taking',
-    url: 'https://minkanda-notes-taking.mtcambrosio.com/',
+    url: 'https://minkanda-note-taking.mtcambrosio.com/',
     image: `${BASE_URL}/minkanda.jpg`,
     technologies: [
       'Spring', 'Nginx', 'Hibernate', 'React/Redux', 'AWS EC2', 'Hostinger'
