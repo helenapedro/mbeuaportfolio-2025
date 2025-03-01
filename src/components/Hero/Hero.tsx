@@ -7,7 +7,7 @@ import { SocialLinks } from './SocialLinks';
 const BASE_URL = "https://pedropublicfiles.s3.us-east-2.amazonaws.com/portfolio";
 const ADDRESS = "Talatona, AO";
 const TIMEZONE = "4 hrs overlap (PST/EST)";
-const JOB_TITLE = "Software Engineer";
+const JOB_TITLE = "Software Development Engineer";
 
 export function Hero() {
   return (
@@ -28,7 +28,7 @@ export function Hero() {
             <StatusBadge Icon={SiFiles} text="Resume" href={`${BASE_URL}/Helena-Pedro-Resume.pdf`} target="_blank" />
           </div>
           <p className="text-base leading-relaxed mb-2 text-gray-300 max-w-2xl mx-auto">
-            I'm a passionate software engineer with a strong background in backend development, microservices, 
+            I'm a passionate SDE with a strong background in full-stack development, microservices, 
             database design, cloud solutions, and data science. I am adept at building high-performance and scalable systems. 
             <br/> This is a showcase of my projects and skills.
           </p>
