@@ -4,6 +4,8 @@ import { ProfileImage } from './ProfileImage';
 import { StatusBadge } from './StatusBadge';
 import { SocialLinks } from './SocialLinks';
 
+const BASE_URL = "https://pedropublicfiles.s3.us-east-2.amazonaws.com/portfolio";
+
 export function Hero() {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-gray-800 text-white h-full lg:min-h-screen">
@@ -20,7 +22,7 @@ export function Hero() {
           <div className="flex flex-col gap-4 text-sm mb-2 w-full">
             <StatusBadge Icon={MapPin} text="Talatona, AO" />
             <StatusBadge Icon={Clock} text="4 hrs overlap (PST/EST)" />
-            <StatusBadge Icon={SiFiles} text="Resume" href="https://hmpedropublicfiles.s3.us-east-2.amazonaws.com/Resume_HMPedro.pdf" target="_blank" />
+            <StatusBadge Icon={SiFiles} text="Resume" href={`${BASE_URL}/Helena-Pedro-Resume.pdf`} target="_blank" />
           </div>
           <p className="text-base leading-relaxed mb-2 text-gray-300 max-w-2xl mx-auto">
             I'm a passionate software engineer with a strong background in backend development, microservices, 
