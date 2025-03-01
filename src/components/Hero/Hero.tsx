@@ -5,6 +5,9 @@ import { StatusBadge } from './StatusBadge';
 import { SocialLinks } from './SocialLinks';
 
 const BASE_URL = "https://pedropublicfiles.s3.us-east-2.amazonaws.com/portfolio";
+const ADDRESS = "Talatona, AO";
+const TIMEZONE = "4 hrs overlap (PST/EST)";
+const JOB_TITLE = "Software Engineer";
 
 export function Hero() {
   return (
@@ -17,11 +20,11 @@ export function Hero() {
             <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
               Helena Pedro
             </h1>
-            <p className="text-xl text-gray-200 mb-4">Software Engineer</p>
+            <p className="text-xl text-gray-200 mb-4">{`${JOB_TITLE}`}</p>
           </div>
           <div className="flex flex-col gap-4 text-sm mb-2 w-full">
-            <StatusBadge Icon={MapPin} text="Talatona, AO" />
-            <StatusBadge Icon={Clock} text="4 hrs overlap (PST/EST)" />
+            <StatusBadge Icon={MapPin} text={`${ADDRESS}`} />
+            <StatusBadge Icon={Clock} text={`${TIMEZONE}`} />
             <StatusBadge Icon={SiFiles} text="Resume" href={`${BASE_URL}/Helena-Pedro-Resume.pdf`} target="_blank" />
           </div>
           <p className="text-base leading-relaxed mb-2 text-gray-300 max-w-2xl mx-auto">
