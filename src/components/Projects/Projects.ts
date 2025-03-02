@@ -32,14 +32,14 @@ export const projects = [
       `${BASE_URL}/rfeedback.webp`,
       `${BASE_URL}/feedback_io.webp`
     ],
+    technologies: ['TypeScript', 'React/Redux', 'Node/Express', 'MongoDB', 'AWS S3'],
     description: `
-      This is a full-stack TypeScript implementation platform for sharing and receiving resume feedback. 
+      This is a full-stack TypeScript implementation platform dedicated to helping professionals improve their resumes through community feedback.. 
       
 
 
       I used AWS 𝗦𝟯 for document storage and AWS CloudFront for 𝗖𝗗𝗡 integration to improve performance.
     `,
-    technologies: ['TypeScript', 'MongoDB', 'Express.js', 'React', 'Node.js', 'Bootstrap'],
     frontendUrl: `${GITHUB_LINK}/feedback-frontend.git`,
     backendUrl: `${GITHUB_LINK}/feedback-backend.git`,
   },
