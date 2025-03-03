@@ -27,7 +27,7 @@ export const projects = [
 
   {
     title: 'Resume Feedback',
-    url: 'https://resumefeedback.mtcambrosio.com/',
+    url: 'https://master.d1cehne8ow0dq0.amplifyapp.com/',
     images: [
       `${BASE_URL}/rfeedback.webp`,
       `${BASE_URL}/feedback_io.webp`
