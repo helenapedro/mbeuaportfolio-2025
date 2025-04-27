@@ -7,7 +7,7 @@ export const projects = [
     url: 'https://minkanda-note-taking.mtcambrosio.com/',
     image: `${BASE_URL}/minkanda.jpg`,
     technologies: [
-      'Spring', 'Nginx', 'Hibernate', 'React/Redux', 'AWS EC2', 'Hostinger'
+      'Spring', 'Nginx', 'JPA', 'React/Redux', 'AWS EC2', 'Hostinger'
     ],
     description: `
       Minkanda is a Web app that securely creates, manages, and accesses private and public notes. 
