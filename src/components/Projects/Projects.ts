@@ -4,7 +4,7 @@ const GITHUB_LINK = "https://github.com/helenapedro";
 export const projects = [
   {
     title: 'Minkanda: Note Taking',
-    url: 'https://minkanda-note-taking.mtcambrosio.com/',
+    url: 'https://minkanda.hmpedro.com/',
     image: `${BASE_URL}/minkanda.jpg`,
     technologies: [
       'Spring', 'Nginx', 'JPA', 'React/Redux', 'AWS EC2', 'Hostinger'
@@ -100,7 +100,7 @@ export const projects = [
   {
     title: 'Portfolio Web App',
     technologies: ['React', 'Bootstrap', 'Firebase', 'S3', 'CloudFront', 'Amplify'],
-    url: 'https://constructpro.mtcambrosio.com/',
+    url: 'https://zepedro-portfolio.hmpedro.com/',
     image: `${BASE_URL}/thisisengineering.jpg`,
     description: 'Portfolio web app that showcases a construction engineer\'s skills, and professionally completed projects.',
     frontendUrl: '',
